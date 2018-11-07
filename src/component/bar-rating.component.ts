@@ -77,8 +77,8 @@ export class BarRatingComponent implements OnInit, OnChanges, ControlValueAccess
     this.contexts = Array.from({ length: this.max }, (context, i) => ({
       selected: false,
       fraction: false,
-      click: (e) => this.handleClick(e, i + 1),
-      enter: () => this.handleEnter(i + 1)
+      click: (e) => this.handleClick(e, i),
+      enter: () => this.handleEnter(i)
     }));
 
     this.updateState(this.rate);

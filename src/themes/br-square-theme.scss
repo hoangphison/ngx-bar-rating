@@ -3,7 +3,7 @@
 .br-square {
 
   .br-units {
-    counter-reset: counter;
+    counter-reset: counter 0;
   }
 
   .br-unit {
